@@ -17,6 +17,19 @@ th{
     background-color: lawngreen;
 }
 
+.emphasis {
+    background-color: red;
+    font-weight: bold;
+}
+
+.font {
+    background-color:darkorchid;
+}
+
+.override {
+    background-color:orange
+}
+
 .codeBlock{
     background-color: black;
     color: white;

@@ -15,7 +15,7 @@
         <ul>
             <li><mark class="sections">Setting a background colour for a section header</mark></li>
             <li><mark class="emphasis">Emphasizing text in a paragraph</mark></li>
-            <li><mark class= "font">Setting font properties</mark></li>
+            <li><mark class="font">Setting font properties</mark></li>
             <li><mark class="override">Overriding styles</mark></li>
         </ul>
         <h2><mark class="sections">Setting a background colour for a section header</mark></h2>
@@ -40,15 +40,15 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>list</td>
-                    <td>li with class attribute</td>
-                    <td class='codeBlock'>&lt;li class="sections"&gt;</td>
+                    <td>tag with class</td>
+                    <td>tag [li/h2] with class attribute</td>
+                    <td class='codeBlock'>&lt;h2 class="sections"&gt;</td>
                     <td>This approach highlights the whole width of the screen</td>
                 </tr>
                 <tr>
-                    <td>mark</td>
+                    <td>mark as embedded tag</td>
                     <td>mark with class attribute</td>
-                    <td class='codeBlock'>&lt;li&gt;&lt;mark class="sections"&gt;</td>
+                    <td class='codeBlock'>&lt;h2&gt;&lt;mark class="sections"&gt;</td>
                     <td>This approach highlights only the text. Mark
                         defaults to yellow as a highlight colour.
                     </td>
@@ -57,23 +57,23 @@
             </tbody>
         </table>
         
-        <!--
-        <li class="sections">Setting a background colour for a section header&lt;/li&gt;</li>
-        <br>
-        vs
-        <br><br>
-        <li><mark class="sections">&lt;li&gt;&lt;mark class="sections"&gt;Setting a background colour for a section header&lt;/mark&gt;&lt;/li&gt;</mark></li>
-        -->
         <p>
             See <a href="https://www.w3schools.com/tags/tag_mark.asp">this page</a> to learn about mark. 
             <br><br>
             In the css sheet, I added a style to all elements with the "sections" class.
-            This over-rode the default color of yellow for &lt;mark&gt; elements.  
+            This over-rode the default color of yellow for &lt;mark&gt; elements. I will repeat
+            for each of my 4 subjects in the bullet list, each of which has its own class.
         </p>
         <p class="codeBlock">    
             &nbsp;&nbsp;.sections { <br>
             &nbsp;&nbsp;     background-color: lawngreen; <br>
             &nbsp;&nbsp;}
         </p>
+        <h2><mark class="emphasis">Emphasizing text in a paragraph</mark></h2>
+        <p>
+            If I want to <span class="emphasis">emphasize text</span>, I can format 
+            a subset of the text using the &lt;span&gt; tag and assign a class. 
+            In my case, I have used my class called emphasis that uses the 
+            &lt;mark&gt; tag with a color property of red. 
     </body>
 </html>
