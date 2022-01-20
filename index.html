@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Cheat sheet</title>
+        <link href="styles.css" type="text/css" rel="stylesheet">
+    </head>
+
+    <header>
+        <h1>My CSS Cheat Sheet: Basic use and properties</h1>
+    </header>
+
+    <body>
+        <p>In this cheat sheet, I summarize my current knowledge of CSS,
+        including</p>
+        <ul>
+            <li><mark class="sections">Setting a background colour for a section header</mark></li>
+            <li><mark class="emphasis">Emphasizing text in a paragraph</mark></li>
+            <li><mark class= "font">Setting font properties</mark></li>
+            <li><mark class="override">Overriding styles</mark></li>
+        </ul>
+        <h2><mark class="sections">Setting a background colour for a section header</mark></h2>
+        <p>
+            The above header is set to green. Here I use colour coding to help you
+            find the section corresponding to the bulleted table of contents. A 
+            class can be assigned a style. I focused on distinguishing
+            background colours for all of my list items in the table of contents,
+            and their corresponding &lt;h2&gt; headings throughout this cheat sheet.
+            For example, I created a class called "sections", which I added as an 
+            attribute for the list item and heading. Two ways 
+            to do this depending on the desired goal are described below<br><br>
+        </p>
+        <table> 
+            <thead>
+                <tr>
+                    <th scope='col'>Approach</th>
+                    <th scope='col'>Tag/Attribute</th>
+                    <th scope='col'>Format</th>                
+                    <th scope='col'>Explanation</th>
+                </tr>                 
+            </thead>
+            <tbody>
+                <tr>
+                    <td>list</td>
+                    <td>li with class attribute</td>
+                    <td class='codeBlock'>&lt;li class="sections"&gt;</td>
+                    <td>This approach highlights the whole width of the screen</td>
+                </tr>
+                <tr>
+                    <td>mark</td>
+                    <td>mark with class attribute</td>
+                    <td class='codeBlock'>&lt;li&gt;&lt;mark class="sections"&gt;</td>
+                    <td>This approach highlights only the text. Mark
+                        defaults to yellow as a highlight colour.
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        
+        <!--
+        <li class="sections">Setting a background colour for a section header&lt;/li&gt;</li>
+        <br>
+        vs
+        <br><br>
+        <li><mark class="sections">&lt;li&gt;&lt;mark class="sections"&gt;Setting a background colour for a section header&lt;/mark&gt;&lt;/li&gt;</mark></li>
+        -->
+        <p>
+            See <a href="https://www.w3schools.com/tags/tag_mark.asp">this page</a> to learn about mark. 
+            <br><br>
+            In the css sheet, I added a style to all elements with the "sections" class.
+            This over-rode the default color of yellow for &lt;mark&gt; elements.  
+        </p>
+        <p class="codeBlock">    
+            &nbsp;&nbsp;.sections { <br>
+            &nbsp;&nbsp;     background-color: lawngreen; <br>
+            &nbsp;&nbsp;}
+        </p>
+    </body>
+</html>
